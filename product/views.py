@@ -8,4 +8,10 @@ class Home(TemplateView):
 
 class Product(View):
     def get(self,request):
-        return response('login.html')
+        return render(request,'product.html')
+
+class Blog(TemplateView):
+    template_name = 'blog.html'
+
+# class Home(TemplateView):
+#     template_name = 'blog.html'

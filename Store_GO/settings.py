@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'customer',
+    'product'
 ]
 
 MIDDLEWARE = [
@@ -70,6 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Store_GO.wsgi.application'
 
+AUTH_USER_MODEL = 'customer.User'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
