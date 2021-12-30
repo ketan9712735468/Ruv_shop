@@ -8,3 +8,7 @@ class Register(View):
 class Login(View):
     def get(self,request):
         return render(request,"login.html")
+
+class Profile(View):
+    def get(self,request):
+        return render(request,'profile.html')

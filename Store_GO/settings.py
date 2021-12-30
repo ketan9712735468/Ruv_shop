@@ -53,6 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Store_GO.urls'
+AUTH_USER_MODEL = 'customer.User'
 
 TEMPLATES = [
     {
@@ -72,7 +73,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Store_GO.wsgi.application'
 
-AUTH_USER_MODEL = 'customer.User'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -81,7 +81,7 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'store_go',
+        'NAME': 'store',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
