@@ -13,5 +13,5 @@ class Product(View):
 class Blog(TemplateView):
     template_name = 'blog.html'
 
-# class Home(TemplateView):
-#     template_name = 'blog.html'
+class About(TemplateView):
+    template_name = 'about.html'
